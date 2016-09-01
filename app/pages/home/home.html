@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic 2 Audio Recorder
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p>
+    <button (click)="startRecording()" [disabled]="audioRecorder.state != AudioRecorderState.Ready">Start recording</button>
+  </p>
+  <p>
+    <button (click)="stopRecording()" [disabled]="audioRecorder.state != AudioRecorderState.Recording">Stop recording</button>
+  </p>
+  <p>
+    <button (click)="startPlayback()" [disabled]="audioRecorder.state != AudioRecorderState.Recorded">Start playback</button>
+  </p>
+  <p>
+    <button (click)="stopPlayback()" [disabled]="audioRecorder.state != AudioRecorderState.Playing">Stop playback</button>
+  </p>
+</ion-content>
