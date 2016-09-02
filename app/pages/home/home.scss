@@ -1,19 +1,35 @@
-.home {
-  
-}
-
-.btn-start-recording {
+.buttton-start-recording,
+.buttton-start-recording.activated {
     background-color: red;
 }
 
-.btn-stop-recording {
+.buttton-start-recording:hover:not(.disable-hover) {
+    background-color: #ff6666;
+}
+
+.buttton-stop-recording,
+.buttton-stop-recording.activated {
     background-color: orange;
 }
 
-.btn-start-playback {
+.buttton-stop-recording:hover:not(.disable-hover) {
+    background-color: #ffc966;
+}
+
+.buttton-start-playback,
+.buttton-start-playback.activated {
     background-color: green;
 }
 
-.btn-stop-playback {
+.buttton-start-playback:hover:not(.disable-hover) {
+    background-color: #80ff80;
+}
+
+.buttton-stop-playback,
+.buttton-stop-playback.activated {
     background-color: blue;
+}
+
+.buttton-stop-playback:hover:not(.disable-hover) {
+    background-color: #387ef5;
 }
