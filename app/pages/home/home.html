@@ -8,15 +8,27 @@
 
 <ion-content padding>
   <p>
-    <button (click)="startRecording()" [disabled]="audioRecorder.state != AudioRecorderState.Ready">Start recording</button>
+    <button (click)="startRecording()" class="btn-start-recording">
+      <ion-icon name="microphone"></ion-icon>
+      Start recording
+    </button>
   </p>
   <p>
-    <button (click)="stopRecording()" [disabled]="audioRecorder.state != AudioRecorderState.Recording">Stop recording</button>
+    <button (click)="stopRecording()" class="btn-stop-recording">
+      <ion-icon name="mic-off"></ion-icon>
+      Stop recording
+    </button>
   </p>
   <p>
-    <button (click)="startPlayback()" [disabled]="audioRecorder.state != AudioRecorderState.Recorded">Start playback</button>
+    <button (click)="startPlayback()" class="btn-start-playback">
+      <ion-icon name="play"></ion-icon>
+      Start playback
+    </button>
   </p>
   <p>
-    <button (click)="stopPlayback()" [disabled]="audioRecorder.state != AudioRecorderState.Playing">Stop playback</button>
+    <button (click)="stopPlayback()" class="btn-stop-playback">
+      <ion-icon name="square"></ion-icon>
+      Stop playback
+    </button>
   </p>
 </ion-content>
