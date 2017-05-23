@@ -10,8 +10,8 @@ To build the app, follow the following steps:
 - Install Cordova: `npm install -g cordova`
 - Clone this repository: `git clone https://github.com/ErikSchierboom/ionic2-audio-recorder.git`
 - Go to the cloned repository's directory and run: `npm install`
-- Add your target platform(s): `ionic platform add <platform>`
-- Add the `cordova-plugin-media` plugin: `ionic plugin add cordova-plugin-media`
+- Add your target platform(s): `ionic cordova platform add <platform>`
+- Add the `cordova-plugin-media` plugin: `ionic cordova plugin add cordova-plugin-media`
 - Either, run the app on a simulator: `ionic emulate <platform>`
 - Or, run the app on a device: `ionic run <platform> --device`
 
